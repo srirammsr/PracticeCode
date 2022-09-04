@@ -17,14 +17,19 @@ class Products:
         return "PID:{} Product Name: {} Rate:{} Qty:{} Amount:{}\n".format(self.pid,self.pname,self.rate,self.qty,self.Amount)
 
 
-p1=Products(1001,"John",45,66)
+p1=Products(1001,"Books",45,66)
 p1.print()
 
-p2=Products(1021,"Maven",15,6)
+p2=Products(1021,"Pens",15,6)
 p2.print()
+
+p3=Products(1111,"Erasers",12,2)
+p3.print()
 
 p1.print2()
 p2.print2()
+p3.print2()
 
 print(p1.print3())
 print(p2.print3())
+print(p3.print3())
