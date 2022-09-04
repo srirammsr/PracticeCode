@@ -33,3 +33,5 @@ p3.print2()
 print(p1.print3())
 print(p2.print3())
 print(p3.print3())
+
+print(p1.__dict__)
