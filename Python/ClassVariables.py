@@ -22,6 +22,14 @@ print(p1.__dict__)
 p1.newprice()
 p1.print()
 
+#We can change the class variable outside the class definition.
+#It reflects across all its instances.
+Products.new_price=1.66
+
+print(Products.new_price)
+print(p1.new_price)
+
+
 
 
 
