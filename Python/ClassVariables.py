@@ -2,12 +2,17 @@
 
 class Products:
     new_price=1.2       #this is class variable
+    Num_Of_Products=0
+
     def __init__(self,pid,pname,rate,qty):
         self.pid=pid
         self.pname=pname
         self.rate=rate
         self.qty=qty
         self.Amount=rate*qty
+
+        Products.Num_Of_Products+=1
+
     def print(self):
         print("Id        : ",self.pid,"\nProduct Name   : ",self.pname,"\nRate      : ",self.rate,"\nQuantity   :",self.qty,"\nTotal Amount :",self.Amount)
         print("******************************************************")
@@ -34,6 +39,8 @@ p1.new_price=1.99
 print(p1.__dict__)
 print(Products.new_price)
 print(p1.new_price)
+
+print(Products.Num_Of_Products)
 
 # this concludes that Instance variables will have their own copy of variables.
 
