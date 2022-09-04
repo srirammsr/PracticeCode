@@ -29,6 +29,14 @@ Products.new_price=1.66
 print(Products.new_price)
 print(p1.new_price)
 
+# Now lets change the new_price value of an instance
+p1.new_price=1.99
+print(p1.__dict__)
+print(Products.new_price)
+print(p1.new_price)
+
+# this concludes that Instance variables will have their own copy of variables.
+
 
 
 
