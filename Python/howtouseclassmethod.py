@@ -1,3 +1,5 @@
+from calendar import weekday
+
 class A:
     newprice  =1.6
     def __init__(self,qty,rate):
@@ -8,6 +10,12 @@ class A:
     @classmethod
     def doubleRate(cls,newvalue):
         cls.newprice=newvalue
+    @staticmethod
+    def is_workday(day):
+        if day.weekday()==5 or day.weekday()==6:
+            return False
+        return True
+
 
 #Using classmethod, value of a variable changed through class or its instance reflects across all instances
 A.doubleRate(1.1)

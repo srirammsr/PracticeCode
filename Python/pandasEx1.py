@@ -9,5 +9,3 @@ print(df.columns.str.capitalize()) #First letter of each column name capital
 print(df.columns.str.upper()) #Lists Columns in uppercase.
 print(df.head())
 print(df.tail())
-
-schema_df=pd.read_csv
