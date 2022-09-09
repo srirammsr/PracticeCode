@@ -1,0 +1,1 @@
+select distinct * into new_table from RawData where [Freight Mode]='Express Road Cargo'

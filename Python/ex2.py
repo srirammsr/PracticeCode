@@ -11,3 +11,6 @@ print(Fruits[0:2])
 print(Fruits[1:-1])
 print(Fruits[:-3]) #first 3 items
 print(Fruits[3])
+print(sorted("Python"))
+var1="aaaa bb ccc"
+print(sorted(var1.split(), key=len))
