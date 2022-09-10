@@ -1,0 +1,8 @@
+Sub OpenFileDialog()
+
+Dim folderPiker As FileDialog
+Set folderPiker = Application.FileDialog(msoFileDialogFolderPicker)
+folderPiker.Show
+Range("A1") = folderPiker.SelectedItems(1)
+
+End Sub
