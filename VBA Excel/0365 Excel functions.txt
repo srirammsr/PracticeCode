@@ -14,3 +14,7 @@ Ex: =XLOOKUP("Male",F1:F1000,G1:N1000)
 
 Returns only 1 record
 
+-------------------------------------------------------------------
+
+=SORT(<table or range>,[index],[sort order;default asc],[Sort by Row or Column;default col]) ' Table is always preferred over range. using table yeilds dynamic results when a row is added or removed or updated.
+=SORT(A2:M100,4,-1)
