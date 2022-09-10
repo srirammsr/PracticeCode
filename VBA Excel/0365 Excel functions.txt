@@ -1,3 +1,10 @@
-B2:H2000 represens a range or table
+B2:H2000 represents a range or table
 The 2nd parameter represents filter. Across C column(that is from C2 through C2000) only those records are filtered whose value is Male.
 =Filter(B2:H2000,C2:C2000="Male")
+A range of rows will be returned
+
+
+
+-------------------------------------------------------------------
+=XLOOKUP(<Value to be searched>,Column1, <return array>)
+XLOOKUP searched for a particular value against Column2(2nd parameter) and returns corresponding value from range mentioned in 3rd parameter
