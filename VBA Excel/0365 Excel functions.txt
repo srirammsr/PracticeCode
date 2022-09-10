@@ -1,7 +1,9 @@
 B2:H2000 represents a range or table
 The 2nd parameter represents filter. Across C column(that is from C2 through C2000) only those records are filtered whose value is Male.
-=Filter(B2:H2000,C2:C2000="Male")
+=Filter(B2:H2000,C2:C2000="Male","Not Found")
 A range of rows will be returned
+If you want to apply 2 conditions then use this as an example:
+=Filter(B2:H2000,(C2:C2000="Male")*(D2:D2000="India"),"Not Found")
 
 
 
