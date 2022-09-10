@@ -1,0 +1,3 @@
+B2:H2000 represens a range or table
+The 2nd parameter represents filter. Across C column(that is from C2 through C2000) only those records are filtered whose value is Male.
+=Filter(B2:H2000,C2:C2000="Male")
