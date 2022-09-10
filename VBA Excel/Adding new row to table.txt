@@ -1,0 +1,5 @@
+Activesheet.ListObjects("TableName").ListRows.Add
+
+or
+
+Activesheet.ListObjects(1).ListRows.Add

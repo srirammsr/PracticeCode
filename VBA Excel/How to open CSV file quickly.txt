@@ -1,0 +1,1 @@
+Open a notepad and drag and drop the csv file onto it. It opens instantly.

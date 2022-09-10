@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=_tPY5BGIsJQ
+
+All about tables in Excel accesing and manipulating thru VBA:
+https://www.thespreadsheetguru.com/blog/2014/6/20/the-vba-guide-to-listobject-excel-tables#TableOverview

@@ -1,0 +1,26 @@
+Sub btn_click()
+ 
+Application.DisplayAlerts = False
+Sheets.Add Before:=ActiveSheet           'Adds a new worksheet towards the left of the current activesheet
+ActiveSheet.Name = "PivotTable"          'The sheet thus created is named as PivotTable
+ 
+
+'Apply FOR loop against these collections in workbooks/worksheet
+For each sh in ThisWorkbook.Worksheets
+For Each cht In ActiveSheet.ChartObjects
+For Each cht In ActiveSheet.PivotTables
+
+
+
+For i = 1 To 10
+    Cells(i, 1) = i	'Activesheet's cells are considered
+Next
+
+Sheets("Sheet2").Range("A5")="Hello World"	' You are in If you are referring to some other worksheet named Sheet2...............
+
+
+To delete rows:
+rows("5:10").delete
+columns("D").delete
+columns("D:F").delete
+End Sub

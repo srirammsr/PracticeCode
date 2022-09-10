@@ -1,0 +1,7 @@
+Cn.ConnectionString = "Provider=MSOLEDBSQL;Server=.;Database=myDB;Trusted_Connection=yes;"
+Cn.Open
+
+Rs.Open "select * from loginlogout", Cn, adOpenKeyset, adLockOptimistic
+
+Range("A2").CopyFromRecordset Rs
+Cn.Close

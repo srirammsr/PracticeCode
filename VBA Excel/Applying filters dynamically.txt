@@ -1,0 +1,4 @@
+ActiveSheet.ListObjects("Table1").Range.AutoFilter Field:=9, Criteria1:="*" & [P1] & "*", Operator:=xlFilterValues
+
+Note: Field=9 indicates 9th column on which filter is applied
+      [P1] indicates the cell where the activeX textbox is assigned to

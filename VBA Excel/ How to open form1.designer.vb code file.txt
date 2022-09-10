@@ -1,0 +1,2 @@
+﻿In VB.NET Solution Explorer,  
+Click on the 'View All files' button on Solution Explorer.
