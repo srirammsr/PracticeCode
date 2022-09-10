@@ -7,4 +7,8 @@ A range of rows will be returned
 
 -------------------------------------------------------------------
 =XLOOKUP(<Value to be searched>,Column1, <return array>)
-XLOOKUP searched for a particular value against Column2(2nd parameter) and returns corresponding value from range mentioned in 3rd parameter
+XLOOKUP searched for a particular value against Column2(2nd parameter) and returns corresponding values from range mentioned in 3rd parameter
+Ex: =XLOOKUP("Male",F1:F1000,G1:N1000)
+
+Returns only 1 record
+
