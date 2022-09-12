@@ -12,10 +12,4 @@ setTimeout(() => {
 }, 2000);
 
 const event = new Date('August 19, 1975 23:15:30');
-
-event.setMonth(3);
-
-console.log(event.getMonth());
-// expected output: 3
-
-console.log(event);
+console.log(12+3);

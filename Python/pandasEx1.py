@@ -23,4 +23,5 @@ print("********************************")
 
 print(df[['ResponseId', 'MainBranch', 'Employment', 'RemoteWork']])
 print(df.iloc[1:4,2:6]) #Display 1st row to 4th row AND 2nd column to 6th column'NOTE: The numbering starts from 0
-print(df.iloc[0:4,0:4])
+print(df.iloc[:,0:4])
+print(df.iloc[:,0:4].drop_duplicates)
