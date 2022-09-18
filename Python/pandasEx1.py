@@ -38,3 +38,5 @@ print(df[(df['ResponseId'] >= 73268) & (df['ResponseId'] <= 73270)])
 
 #df.ResponseId=73268
 
+
+
