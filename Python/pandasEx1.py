@@ -23,5 +23,18 @@ print("********************************")
 
 print(df[['ResponseId', 'MainBranch', 'Employment', 'RemoteWork']])
 print(df.iloc[1:4,2:6]) #Display 1st row to 4th row AND 2nd column to 6th column'NOTE: The numbering starts from 0
-print(df.iloc[:,0:4])
+print(df.iloc[:,0:4])   # print(df.iloc[2,1]).....this display cell in 2nd row and 1st row
 print(df.iloc[:,0:4].drop_duplicates)
+
+#print(df['MainBranch'][0:5])
+#for i,x in df.iterrows():
+ #   print(i,x)
+#for i,x in df.iterrows():
+#    print(i,x['ResponseId'])
+#print((df['ResponseId']>73000) & (df['RemoteWork']=='Fully remote'))
+#df.describe()
+#print(df["ResponseId"].between(73000,73010))
+print(df[(df['ResponseId'] >= 73268) & (df['ResponseId'] <= 73270)])
+
+#df.ResponseId=73268
+
