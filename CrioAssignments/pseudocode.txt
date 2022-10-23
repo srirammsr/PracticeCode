@@ -1,0 +1,23 @@
+Pseudocode for Problem 1
+Find the sum of 2 numbers:
+
+1. Input a
+2. check if a is a number
+3. if a is not a number goto step 1
+4. Input b
+5. check if b is a number
+6. if b is not a number goto step 4
+7. let c= a+b
+8. print C
+
+
+Pseudocode for Problem 1
+Classify if the number is odd or even
+
+1. Input a
+2. check if a is a number
+3. if a is not a number goto step 1
+4. let Remainder =a/2
+5. if remainder=1 then a is odd
+6. if remainder =0 then a is even
+7. print a

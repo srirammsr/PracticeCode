@@ -1,0 +1,47 @@
+What is RANK() in SQL?
+
+The RANK() function is a window function could be used in SQL Server to calculate a rank for each row within a partition of a result set. 
+
+The same rank is assigned to the rows in a partition which have the same values. The rank of the first row is 1. The ranks may not be consecutive in the RANK() function as it adds the number of repeated rows to the repeated rank to calculate the rank of the next row.
+
+
+Row_Number(),RANK() and Dense_Rank() window-functions in SQL without using partition:
+
+
+SQL>SELECT *, ROW_NUMBER() OVER (ORDER BY MARKS) AS ROWNUM,
+		  RANK() OVER (ORDER BY MARKS) AS RNK,
+		  DENSE_RANK() OVER (ORDER BY MARKS)AS DENSERNK FROM EXAMRESULT
+
+
+
+
+StudentName	Subject		Marks	ROWNUM	RNK	DENSERNK
+----------------------------------------------------------------
+Isabella	Maths		50	  1	1	  1
+Olivia		Maths		55	  2	2	  2
+Olivia		Science		60	  3	3	  3
+Lily		Maths		65	  4	4	  4
+Isabella	Science		70	  5	5	  5
+Lily		english		70	  6	5	  5
+Lily		Science		80	  7	7	  6
+Olivia		english		89	  8	8	  7
+Isabella	english		90	  9	9	  8
+
+Notes: Row_number() simply assigns a number for each row irrespective of contents.
+       Rank() assigns same rank to rows if marks are same. However the next available rank number is skipped.	
+       Dense_Rank() assigns same rank to rows if marks are same. However the next available rank number is used.
+
+Please observe the last 2 columns above. 
+
+
+You can have more than 1 column in the bracket as given below:
+
+SQL>SELECT *, ROW_NUMBER() OVER (ORDER BY MARKS,studentName desc) AS ROWNUM,
+		  RANK() OVER (ORDER BY MARKS desc,studentname asc) AS RNK,
+		  DENSE_RANK() OVER (ORDER BY MARKS,subject desc)AS DENSERNK FROM EXAMRESULT
+
+
+Applying where conditions:
+SQL>select * from (
+	select *,rank() over(order by marks desc,subject desc) as ranking from examresult) as a 
+	where ranking<=5

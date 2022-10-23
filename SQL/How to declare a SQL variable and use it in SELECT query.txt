@@ -1,0 +1,7 @@
+How to declare a SQL variable and use it in SELECT query?
+---------------------------------------------------------
+
+DECLARE @PurchaseName AS NVARCHAR(50)
+
+SELECT @PurchaseName = [Name] FROM [Purchasing].[Vendor]
+WHERE BusinessEntityID = 1492

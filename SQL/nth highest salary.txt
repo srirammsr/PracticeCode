@@ -1,0 +1,11 @@
+Find Nth highest salary using a sub query:
+
+SELECT TOP 1 SALARY  
+FROM (  
+      SELECT DISTINCT TOP 3 SALARY  
+      FROM tbl_Employees  
+      ORDER BY SALARY DESC  
+      ) RESULT  
+ORDER BY SALARY 
+
+Note: The inner subquery will fetch top 3 salaries. Its again sorted in ascending order by outer order by clause. The outer query top 1 salary will capture N'th salary.

@@ -1,0 +1,22 @@
+You might came across the following addition:
+a+=8;
+
+this += is called compound assignment operator:
+
+We can use compound assignment operators for all of the arithmetic operators we’ve covered:
+
+Addition (+=)
+Subtraction (-=)
+Multiplication (*=)
+Division (/=)
+Modulo (%=)
+
+
+-----------------------------------------------------------------
+
+A statically-typed language is a language (such as Java, C, or C++) where variable types are known at compile time. 
+int i;
+char gender;
+
+---------------------------------------------------------------------
+

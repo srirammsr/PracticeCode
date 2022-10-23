@@ -1,1 +1,1 @@
-select *,row_number() over (partition by ID, order by Id
+select *,row_number() over (partition by ID, order by Id) from orders

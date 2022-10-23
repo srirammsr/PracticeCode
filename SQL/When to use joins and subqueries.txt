@@ -1,0 +1,1 @@
+If you need to combine related information from different rows within a table, then you can join the table with itself. Use subqueries when the result that you want requires more than one query and each subquery provides a subset of the table involved in the query.

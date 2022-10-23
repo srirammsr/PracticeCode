@@ -1,0 +1,20 @@
+Raw data should be converted to Table before applying Pivot onto it. Any new row added will reflect in Pivottable automatically.
+click anywhere in data and press Ctrl+T
+
+
+****************************************************
+Turn Off AutoFit Columns On All Pivot Tables
+
+Sub TurnAutoFitOff_PivotTables()
+
+Dim pvt As PivotTable
+For Each pvt In ActiveSheet.PivotTables
+   pvt.HasAutoFormat = False
+Next pvt
+
+End Sub
+****************************************************
+if you want to use getpivotdata function, it should be enabled in File-->options
+
+
+*******************************************

@@ -1,0 +1,12 @@
+VBA Code To Change Tab Color
+
+Worksheets("Sheet2").Tab.Color = RGB(25, 25, 25)
+
+'to remove tab color of a worksheet
+Worksheets("Sheet2").Tab.Color=xlnone
+
+''to remove tab color of all worksheets
+VBA Code To Remove Color From All Sheets
+For each sht in ActiveWorkbook.Worksheets
+	sht.tab.color=xlNone
+Next

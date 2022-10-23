@@ -1,0 +1,30 @@
+Using DENSE_RANK function in combination with the SQL PARTITION BY clause.
+
+SQL>SELECT Studentname, 
+       Subject, 
+       Marks, 
+       DENSE_RANK() OVER(PARTITION BY Subject ORDER BY Marks DESC) Rnk
+FROM ExamResult
+ORDER BY Studentname, 
+         Rnk;
+
+
+StudentName	Subject		Marks	Rnk
+-------------------------------------------
+Isabella	english		90	1
+Isabella	Science		70	2
+Isabella	Maths		50	3
+Lily		Science		80	1
+Lily		english		70	2
+Lily		Maths		65	3
+Olivia		english		89	1
+Olivia		Science		60	2
+Olivia		Maths		55	3
+Sri		Computers	93	1
+Sri		Maths		92	2
+Sri		Science		92	2
+Sri		English		80	4
+
+NOTE: The rank numbering resets for every change in StudentName.
+	If the marks are same for same student, the next value is skipped.
+	Observe the last 4 rows. 

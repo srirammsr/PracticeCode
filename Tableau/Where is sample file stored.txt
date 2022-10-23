@@ -1,0 +1,2 @@
+When Tableau is installed, a sample superstore file is stored in the following folder:
+C:\Users\srira\OneDrive\Documents\My Tableau Repository\Datasources\2022.1\en_US-US

@@ -1,0 +1,1 @@
+A scalar valued function is a function that takes one or more values but returns a single value

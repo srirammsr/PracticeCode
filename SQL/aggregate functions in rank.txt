@@ -1,0 +1,22 @@
+Using group by clause with rank() or dense_rank(). Any aggregate function can be used: sum(), count(*),avg() 
+-------------------------------------------------
+
+The following SELECT query will give ranking to students based on their average score in Marks.
+
+
+Select dense_rank() over(order by avg(marks) desc) as ranking,studentname,avg(marks) from ExamResult group by studentname.
+
+SELECT
+  RANK() OVER(ORDER BY SUM(marks) DESC) AS ranking,
+  city,
+  SUM(marks) AS total_points
+FROM ExamResult
+GROUP BY studentname
+
+
+SELECT
+  RANK() OVER(ORDER BY COUNT(*) DESC) AS ranking,
+  city,
+  COUNT(*) AS exam_takers
+FROM ExamResult
+GROUP BY city;

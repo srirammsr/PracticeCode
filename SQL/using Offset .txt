@@ -1,0 +1,18 @@
+SELECT  FROM Superstore ORDER BY Sub_Category OFFSET 5 ROWS
+					FETCH NEXT 10 ROWS ONLY
+
+
+Skipping first 5 rows and after that displaying next 10 rows only.Order by clause is mandatory.
+
+
+The following procedure takes 2 parameters in order to get executed:
+--------------------------------------------------------------------
+
+create procedure sp_displaynrows
+@pagenumber INt,
+@pagesize INT
+AS
+BEGIN
+	select * from Superstore order by Sub_Category offset (@pagenumber-1)*@pagesize rows fetch next 10 rows ONLY
+
+end

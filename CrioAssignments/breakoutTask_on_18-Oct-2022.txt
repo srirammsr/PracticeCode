@@ -1,0 +1,31 @@
+Round off to nearest whole number.
+and 5 digiit number
+if its string, then alpha number
+Saravana : 9008712312
+
+
+
+
+1. Positive integer only
+2. any decimal number rounded off to nearest whole Number.
+3.Max 5 digit number acceptable is 99999.
+4.Anything else is invalid.
+
+
+2nd problem:
+1. Accept 3  integers only (can be + ve or -ve). In case of decimals ,rounded off to nearest #.
+
+Range of numbers acceptible ??????????
+
+2. Compare 1st and 2nd and identify the greatest number.
+3. Compare the identified number with the 3rd number.
+4. print the greatest number from 3rd point.
+5. Anything else is invalid.
+
+
+Leap year:
+1.Accept a year.
+2.Only +integers
+3.maximum value ?????????? not given
+4.If the year is divisible by 400 OR If the year is divisible by 4 and not divisible by 100, print 'Leap year'. 
+5.

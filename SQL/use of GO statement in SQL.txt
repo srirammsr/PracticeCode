@@ -1,0 +1,8 @@
+DECLARE @TestVariable AS VARCHAR(100)
+SET @TestVariable = 'Think Green'
+GO
+PRINT @TestVariable
+
+
+When you select all the above staements and execute, it throws a variable saying variable not defined. 
+The above script generated an error because of the GO statement. GO statement determines the end of the batch in SQL Server thus @TestVariable lifecycle ends with GO statement line.

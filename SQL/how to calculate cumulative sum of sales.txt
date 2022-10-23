@@ -1,0 +1,3 @@
+how to calculate cumulative sum of sales 
+
+select order_date,sales,sum(sales) over(order by order_date) from Superstore
